@@ -44,3 +44,12 @@ The app reads data from SQL Server using SQL scripts and does not include UI bas
 
 7. Configure SQL Server
 Make sure SQL Server is running and the connection details in **sql.js** match your environm
+
+## Pages
+<img width="1100" height="800" alt="Screenshot 2025-11-21 at 21 05 37" src="https://github.com/user-attachments/assets/53365e8b-6ba0-47d7-845c-38b079969796" />
+<img width="1100" height="800" alt="Screenshot 2025-11-21 at 21 06 05" src="https://github.com/user-attachments/assets/6fffe353-3bb0-409b-b26b-645f77e7da01" />
+<img width="1100" height="800" alt="Screenshot 2025-11-21 at 21 06 17" src="https://github.com/user-attachments/assets/ca040b74-2a06-46fa-89fe-efb5a0ce5747" />
+<img width="1100" height="800" alt="Screenshot 2025-11-21 at 21 07 24" src="https://github.com/user-attachments/assets/b0aa6a31-0bb7-4ccb-abcd-717e3f22de7d" />
+<img width="1100" height="800" alt="Screenshot 2025-11-21 at 21 07 30" src="https://github.com/user-attachments/assets/0e12f0bc-9d8e-469a-bc78-5d8ec4343be2" />
+
+
