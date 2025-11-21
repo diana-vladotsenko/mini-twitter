@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/css/global.css">
+    <title>Statistics</title>
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <h1>Platform Statistics</h1>
+      <a href="/" class="back-btn">Back to Home</a>
+
+      <div class="stats-section">
+        <div class="section-heading">General Overview</div>
+
+        <div class="stats-grid">
+
+          <div class="stat-card highlight">
+            <div class="stat-label">Total Users</div>
+            <div class="stat-value">{{stats.TotalUsers}}</div>
+          </div>
+
+          <div class="stat-card highlight">
+            <div class="stat-label">Total Posts</div>
+            <div class="stat-value">{{stats.TotalPosts}}</div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-label">Total Comments</div>
+            <div class="stat-value">{{stats.TotalComments}}</div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-label">Total Likes</div>
+            <div class="stat-value">{{stats.TotalLikes}}</div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-label">Hashtags</div>
+            <div class="stat-value">{{stats.TotalHashtags}}</div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="stats-section">
+        <div class="section-heading">User Activity</div>
+
+        <div class="stats-grid">
+
+          <div class="stat-card">
+            <div class="stat-label">Avg Posts Per User</div>
+            <div class="stat-value">{{stats.AvgPostsPerUser}}</div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-label">Max Posts By Single User</div>
+            <div class="stat-value">{{stats.MaxPostsBySingleUser}}</div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="stats-section">
+        <div class="section-heading">Post Interactions</div>
+
+        <div class="stats-grid">
+
+          <div class="stat-card">
+            <div class="stat-label">Avg Comments Per Post</div>
+            <div class="stat-value">{{stats.AvgCommentsPerPost}}</div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-label">Max Comments On One Post</div>
+            <div class="stat-value">{{stats.MaxCommentsOnPost}}</div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-label">Avg Likes Per Post</div>
+            <div class="stat-value">{{stats.AvgLikesPerPost}}</div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-label">Max Likes On One Post</div>
+            <div class="stat-value">{{stats.MaxLikesOnPost}}</div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+  </body>
+</html>

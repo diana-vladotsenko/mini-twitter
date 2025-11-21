@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/css/global.css" />
+    <title>Posts</title>
+  </head>
+
+  <body>
+
+    <div class="feed-container">
+      <h1>Posts</h1>
+
+      <a href="/" class="back-btn">Back to Home</a>
+
+      {{#each posts}}
+      <div class="post">
+
+        <div class="avatar">
+          {{Full_Name.[0]}}
+        </div>
+
+        <div class="content-area">
+
+          <p class="name">{{Full_Name}}</p>
+          <p class="username">@{{Username}}</p>
+          
+
+          <p class="text">{{Content}}</p>
+
+          {{#if Media.length}}
+            {{#each Media}}
+              <img src="{{Url}}" class="post-image" />
+            {{/each}}
+          {{/if}}
+
+          {{#if Hashtags.length}}
+            <div class="hashtags">
+              {{#each Hashtags}}
+                <span class="hashtag">#{{Name}}</span>
+              {{/each}}
+            </div>
+          {{/if}}
+
+          <div class="post-stats">
+            <span class="likes">❤️ {{LikeCount}}</span>
+            <span class="comments-count">💬 {{Comments.length}}</span>
+          </div>
+
+          {{#if Comments.length}}
+  <div class="comments-section">
+
+    <div class="comments-title">Comments</div>
+
+    {{#each Comments}}
+      <div class="comment">
+
+        <div class="comment-avatar">{{Full_Name.[0]}}</div>
+
+        <div class="comment-body">
+          <div class="comment-header">
+            <span class="comment-author">{{Full_Name}}</span>
+            <span class="comment-username">@{{Username}}</span>
+          </div>
+
+          <div class="comment-text">{{Comment}}</div>
+
+        </div>
+
+      </div>
+    {{/each}}
+
+  </div>
+{{/if}}
+
+
+        </div>
+
+      </div>
+      {{/each}}
+
+    </div>
+
+  </body>
+</html>

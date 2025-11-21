@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/css/global.css">
+    <title>{{user.Full_Name}}</title>
+  </head>
+
+  <body>
+
+    <div class="profile-page">
+
+      <div class="profile-topbar">
+        <a href="/api/users" class="back-btn">Go Back</a>
+      </div>
+
+      <div class="profile-banner"></div>
+
+      <div class="profile-avatar-container">
+        <div class="profile-avatar-big">
+          {{user.Full_Name.[0]}}
+        </div>
+      </div>
+
+      <div class="profile-mainblock">
+
+        <h1 class="profile-name">{{user.Full_Name}}</h1>
+        <p class="profile-username">@{{user.Username}}</p>
+
+        <div class="profile-follow-row">
+          <div class="follow-count">
+            <span>{{posts.length}}</span> Posts
+          </div>
+        </div>
+
+      </div>
+
+      <div class="profile-tabs">
+        <div class="profile-tab active">Posts</div>
+      </div>
+
+      <div class="profile-content">
+
+        <div class="profile-posts">
+          {{#each posts}}
+            <div class="post profile-post-row">
+              <div class="avatar">
+                {{../user.Full_Name.[0]}}
+              </div>
+
+              <div class="content-area">
+                <div class="name-row">
+                  <span class="name">{{../user.Full_Name}}</span>
+                  <span class="username">@{{../user.Username}}</span>
+                </div>
+
+                <div class="text">{{Content}}</div>
+
+                <div class="post-date-small">{{Created_at}}</div>
+              </div>
+            </div>
+          {{/each}}
+
+          {{#unless posts.length}}
+            <p class="no-posts">This user has no posts</p>
+          {{/unless}}
+        </div>
+
+      </div>
+
+    </div>
+
+  </body>
+</html>

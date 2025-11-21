@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/css/global.css" />
+    <title>Top Active Users</title>
+  </head>
+
+  <body>
+    <div class="container">
+
+      <h1>Top 10 Most Active Users</h1>
+
+      <a href="/" class="back-btn">Back to Home</a>
+
+      <div class="users-list">
+
+        {{#each users}}
+          <div class="user-card-profile">
+
+            <div class="user-card-header">
+              <div class="avatar user-card-avatar">
+                {{Full_Name.[0]}}
+              </div>
+
+              <div class="user-card-text">
+                <div class="fullname">{{Full_Name}}</div>
+                <div class="username">@{{Username}}</div>
+              </div>
+            </div>
+
+            <div class="user-active-info">
+              <span class="active-label">Posts</span>
+              <span class="active-value">{{PostCount}}</span>
+            </div>
+
+            <div class="user-card-actions">
+              <a href="/api/users/{{ID}}" class="profile-link">View Profile</a>
+            </div>
+
+          </div>
+        {{/each}}
+
+      </div>
+
+    </div>
+  </body>
+</html>
